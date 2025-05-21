@@ -9,6 +9,7 @@ Forked from:  https://github.com/AugmendTech/treeseg.git
 
 ## How to use
 
+```
    transcript = [
     {'speaker': 'Alice', 'composite': 'Okay team, let\'s kick off the weekly sync. First agenda item is the Q3 roadmap planning.'},
     {'speaker': 'Bob', 'composite': 'Right. I\'ve drafted the initial proposal based on the feedback from the product team.'},
@@ -20,12 +21,15 @@ Forked from:  https://github.com/AugmendTech/treeseg.git
     {'speaker': 'Bob', 'composite': 'Okay, back to the roadmap. For customer acquisition, we\'re planning two major campaigns...'}
     # ... more utterances
 ]
+```
 
+```
     EMBEDDINGS_HEADERS = {
         "Content-Type": "application/json",
         "Authorization": "Bearer " + os.getenv("OPENAI_API_KEY"),
     }
-
+```
+```
     config =   {
         "MIN_SEGMENT_SIZE": 2,
         "LAMBDA_BALANCE": 0,
@@ -42,5 +46,5 @@ Forked from:  https://github.com/AugmendTech/treeseg.git
     segmenter = TreeSeg(configs=config, entries=transcript)
 
     segments = segmenter.segment_meeting(3)
-
+```
     
