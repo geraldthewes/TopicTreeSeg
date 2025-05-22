@@ -3,9 +3,9 @@ import asyncio
 from unittest.mock import patch, AsyncMock, MagicMock
 
 # Assuming TopicTreeSeg is installed or in PYTHONPATH for imports
-from TopicTreeSeg.embeddings import Embeddings 
-from TopicTreeSeg.ollama import ollama_embeddings, get_ollama_async_client_instance, _global_ollama_client
-from TopicTreeSeg.openai import openai_embeddings
+from topic_treeseg.embeddings import Embeddings 
+from topic_treeseg.ollama import ollama_embeddings, get_ollama_async_client_instance, _global_ollama_client
+
 
 class TestOllamaEmbeddings(unittest.TestCase):
 

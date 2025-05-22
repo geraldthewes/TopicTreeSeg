@@ -3,21 +3,20 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "TopicTreeSeg"
+name = "topic_treeseg"
 version = "0.1.0"
 description = "Hierarchical Topic Segmentation of Large Transcripts using Embeddings"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {file = "LICENSE"}
+license = "Apache-2.0"
 keywords = ["topic segmentation", "nlp", "embeddings", "hierarchical clustering"]
 authors = [
-  {name = "Your Name / Organization", email = "your@email.com"}
+  {name = "Gerald Hewes / Self", email = "gerald@geraldthewes.org"}
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
@@ -47,9 +46,9 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/your-repo/TopicTreeSeg" # Placeholder
-"Bug Tracker" = "https://github.com/your-repo/TopicTreeSeg/issues" # Placeholder
-"Documentation" = "https://github.com/your-repo/TopicTreeSeg#readme" # Placeholder
-"Source Code" = "https://github.com/your-repo/TopicTreeSeg" # Placeholder
+"Homepage" = "https://github.com/geraldthewes/TopicTreeSeg" 
+"Bug Tracker" = "https://github.com/geraldthewes/TopicTreeSeg/issues" 
+"Documentation" = "https://github.com/geraldthewes/TopicTreeSeg#readme"
+"Source Code" = "https://github.com/geraldthewes/TopicTreeSeg" 
 "Original Paper" = "https://arxiv.org/abs/2407.12028"
 "Original Repo" = "https://github.com/AugmendTech/treeseg"
