@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TopicTreeSeg"
+version = "0.1.0"
+description = "Hierarchical Topic Segmentation of Large Transcripts using Embeddings"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["topic segmentation", "nlp", "embeddings", "hierarchical clustering"]
+authors = [
+  {name = "Your Name / Organization", email = "your@email.com"}
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: General",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+dependencies = [
+  "numpy",
+  "structlog",
+  "pydantic",
+  "ollama",
+  "openai",
+  "aiohttp"
+]
+
+[project.optional-dependencies]
+visualization = [
+  "matplotlib"
+]
+dev = [
+  "matplotlib" 
+  # Potentially add linters, test runners like pytest here later
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your-repo/TopicTreeSeg" # Placeholder
+"Bug Tracker" = "https://github.com/your-repo/TopicTreeSeg/issues" # Placeholder
+"Documentation" = "https://github.com/your-repo/TopicTreeSeg#readme" # Placeholder
+"Source Code" = "https://github.com/your-repo/TopicTreeSeg" # Placeholder
+"Original Paper" = "https://arxiv.org/abs/2407.12028"
+"Original Repo" = "https://github.com/AugmendTech/treeseg"
