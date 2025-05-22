@@ -103,3 +103,9 @@ segments_openai = segmenter_openai.segment_meeting(K=3)
 
 print("Segments (OpenAI):", segments_openai)
 ```
+
+
+### Unit test
+```
+ python -m unittest tests/test_treeseg.py 
+```
